@@ -24,3 +24,11 @@ jobs:
         cache: maven
     - name: Executing Tests
       run: mvn test
+  
+  deploy:
+
+    depends: test
+
+    steps:
+      - name: Deploying
+        run: echo "Fazendo o deploy da aplicação"
