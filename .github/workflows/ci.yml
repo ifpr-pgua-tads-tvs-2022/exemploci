@@ -27,7 +27,7 @@ jobs:
   
   deploy:
     runs-on: ubuntu-latest
-    depends: test
+    needs: test
 
     steps:
       - name: Deploying
