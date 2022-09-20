@@ -26,7 +26,7 @@ jobs:
       run: mvn test
   
   deploy:
-
+    runs-on: ubuntu-latest
     depends: test
 
     steps:
